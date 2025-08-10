@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Your Online Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #ff9900, #ff6600);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #000;
+        }
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f') no-repeat center/cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            background-color: #ff6600;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .hero button:hover {
+            background-color: #e65c00;
+        }
+        /* Products */
+        .products {
+            padding: 50px 5%;
+        }
+        .products h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .product h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        .product p {
+            color: #ff6600;
+            font-weight: 600;
+        }
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>ShopEase</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/signin_page/">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Discover Your Style</h2>
+        <p>Exclusive deals on top brands. Limited time only!</p>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+        <h3>Featured Products</h3>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1b5" alt="Product 1">
+                <h4>Stylish Jacket</h4>
+                <p>$49.99</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Product 2">
+                <h4>Trendy Sneakers</h4>
+                <p>$59.99</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Product 3">
+                <h4>Smart Watch</h4>
+                <p>$89.99</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Product 4">
+                <h4>Leather Bag</h4>
+                <p>$39.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ShopEase. All rights reserved.</p>
+    </footer>
+</body>
+</html>
